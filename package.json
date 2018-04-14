@@ -1,0 +1,23 @@
+{
+  "name": "webBaseCSS",
+  "version": "1.0.0",
+  "description": "一套应用于web页面的基础样式类库",
+  "repository": "git@git.corp.bianlifeng.com:mingyan.yu/webBaseCSS.git",
+  "author": "mingyan.yu <mingyan.yu@wormpex.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "eslint": "^4.18.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}

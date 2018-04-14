@@ -1,0 +1,93 @@
+.generate-m(6);
+.generate-mt(8);
+.generate-mb(8);
+.generate-ml(8);
+.generate-mr(8);
+
+.generate-p(6);
+.generate-pt(8);
+.generate-pb(8);
+.generate-pl(8);
+.generate-pr(8);
+
+/*margin*/
+.generate-m(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .m@{num} {
+    margin: (@num * 1px);
+  }
+  .generate-m(@n, (@i + 1));
+}
+
+.generate-mr(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .mr@{num} {
+    margin-right: (1px * @num);
+  }
+  .generate-mr(@n, (@i + 1));
+}
+
+.generate-ml(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .ml@{num} {
+    margin-left: (1px * @num);
+  }
+  .generate-ml(@n, (@i + 1));
+}
+
+.generate-mt(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .mt@{num} {
+    margin-top: (1px * @num);
+  }
+  .generate-mt(@n, (@i + 1));
+}
+
+.generate-mb(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .mb@{num} {
+    margin-bottom: (1px * @num);
+  }
+  .generate-mb(@n, (@i + 1));
+}
+
+/*padding*/
+.generate-p(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .p@{num} {
+    padding: (1px * @num);
+  }
+  .generate-p(@n, (@i + 1));
+}
+
+.generate-pr(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .pr@{num} {
+    padding-right: (1px * @num);
+  }
+  .generate-pr(@n, (@i + 1));
+}
+
+.generate-pl(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .pl@{num} {
+    padding-left: (1px * @num);
+  }
+  .generate-pl(@n, (@i + 1));
+}
+
+.generate-pt(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .pt@{num} {
+    padding-top: (1px * @num);
+  }
+  .generate-pt(@n, (@i + 1));
+}
+
+.generate-pb(@n, @i:1) when (@i =< @n) {
+  @num: (@i * 5);
+  .pb@{num} {
+    padding-bottom: (1px * @num);
+  }
+  .generate-pb(@n, (@i + 1));
+}
