@@ -8,7 +8,7 @@ module.exports = {
     filename: 'index.js'
   },
   plugins: [
-    new ExtractTextPlugin('base.css')
+    new ExtractTextPlugin('index.css')
   ],
   module: {
     rules: [
