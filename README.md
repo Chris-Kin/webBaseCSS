@@ -12,9 +12,9 @@
 | 属性值为数字类型的类名命名规则 | 数值与属性之间不加中划线 | ```m10 —> margin: 10px```<br />```mr10 —> margin-right: 10px```<br />```pt40 -> padding-top: 40px```<br />```w80 -> width: 80px``` |
 | 属性值为非数字类型的类名命名规则 | 属性名首字母缩写-属性值单词首字母缩写 | ```dis-ib -> display: inline-block```<br />```ta-c -> text-align: center```<br /> ```td-ol -> text-decoration: overline```|
 | .. | .. |..|
-|首字母简写有歧义的属性命名| 采用属性名单词缩写形式命名 | ```dis-ib -> display: inline-block``` |
+|首字母简写有歧义的属性命名| 采用属性名单词缩写形式命名 | ```dis-ib -> display: inline-block``` |
 
 # 使用介绍
 1. 全局引入webBaseCSS： ```import 'webBaseCSS/dist/index.css';```
-2. 在需要设置样式的标签上定义类，如``` <div class="mt10 w200"></div>``` 表示对div设置```margin-top: 10px; width: 200px```
+2. 在需要设置样式的标签上定义类，如``` <div class="mt10 w200"></div>``` 表示对div设置```margin-top: 10px; width: 200px```
 3. [normalize.css](https://necolas.github.io/normalize.css/)
