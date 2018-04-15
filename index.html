@@ -23,6 +23,7 @@
       position: relative;
       height: 40px;
       line-height: 40px;
+      border-bottom: 1px solid transparent;      
     }
     li > section:hover {
       border-bottom: 1px solid #009a60;
@@ -30,7 +31,7 @@
     li > section::before {
       content: '';
       position: absolute;
-      left: -10px;
+      left: 0;
       top: 0;
       height: 100%;
       width: 4px;
@@ -42,7 +43,7 @@
   <div id="app" class="p20">
     <h2 class="ta-c">欢迎使用webBaseCSS，通读本页，你将迅速熟悉webBaseCSS库的使用。</h2>
     <ul>
-      <li v-for="el in categoryList">
+      <li class="pl10" v-for="el in categoryList">
         <section>{{el}}:</section>
       </li>
     </ul>
