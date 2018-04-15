@@ -13,22 +13,22 @@
       font-weight: normal;
     }
     body {
-      font-size: 16px;
+      font-size: 14px;
     }
     ul {
       list-style: none;
     }
-    li > section {
+    li > .title {
       font-size: 2em;
       position: relative;
       height: 40px;
       line-height: 40px;
       border-bottom: 1px solid transparent;      
     }
-    li > section:hover {
+    li > .title:hover {
       border-bottom: 1px solid #009a60;
     }
-    li > section::before {
+    li > .title::before {
       content: '';
       position: absolute;
       left: 0;
@@ -43,20 +43,72 @@
   <div id="app" class="p20">
     <h2 class="ta-c">欢迎使用webBaseCSS，通读本页，你将迅速熟悉webBaseCSS库的使用。</h2>
     <ul>
-      <li class="pl10" v-for="el in categoryList">
-        <section>{{el}}:</section>
+      <li v-for="el in categoryList">
+        <p class="title pl10">{{el.title}}:</p>
+        <section>
+          <div v-for="item in el.content" :class="item">this is .{{el.content}}</div>
+        </section>
       </li>
     </ul>
   </div>
   <script>
     var categoryList = [
-      'size',
-      'space',
-      'highlight',
-      'text',
-      'display',
-      'transition',
-      'variable'
+      {
+        title: 'size',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'space',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'highlight',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'text',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'display',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'transition',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      },
+      {
+        title: 'variable',
+        content: [
+          'w100',
+          'w150',
+          'w200',
+        ],
+      }
     ];
     var app = new Vue({
       el: '#app',
