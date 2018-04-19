@@ -15,38 +15,48 @@
     body {
       font-size: 14px;
     }
+    .github {
+      float: right;
+      color: #999;
+      font-size: .8em;
+    }
     ul {
       list-style: none;
+      padding: 0;
     }
     li > .title {
       font-size: 2em;
       position: relative;
       height: 40px;
       line-height: 40px;
-      border-bottom: 1px solid transparent;      
+      border-bottom: 2px solid #009a60;
     }
-    li > .title:hover {
-      border-bottom: 1px solid #009a60;
+    .desc {
+      color: #666;
+      font-size: .5em;
     }
-    li > .title::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 4px;
-      background-color: #009a60;
+    .bg {
+      background-color: #dbf4eb;
+    }
+    .bg-light {
+      background-color: #a3d9c5;
+    }
+    section > div {
+      margin: 10px;
     }
   </style>
 </head>
 <body>
   <div id="app" class="p20">
-    <h2 class="ta-c">欢迎使用webBaseCSS，通读本页，你将迅速熟悉webBaseCSS库的使用。</h2>
+    <h2 class="ta-c">
+      欢迎使用webBaseCSS，通读本页，你将迅速熟悉webBaseCSS库的使用。
+      <a class="github" href="//github.com/attacking/webBaseCSS">进入项目</a>
+    </h2>
     <ul>
       <li v-for="el in categoryList">
-        <p class="title pl10">{{el.title}}:</p>
+        <p class="title transition-slow">{{el.title}}<span class="desc ml20">{{el.desc}}</span></p>
         <section>
-          <div v-for="item in el.content" :class="item">.{{item}}</div>
+          <div v-for="item in el.content" :class="item" class="bg">.{{item}}</div>
         </section>
       </li>
     </ul>
@@ -55,50 +65,103 @@
     var categoryList = [
       {
         title: 'size',
+        desc: '元素尺寸样式，可选值为从10开始公差为10最大项为500的等差数列',
         content: [
+          'w10',
+          'w20',
+          'w30',
+          'w50',
           'w100',
           'w150',
           'w200',
+          'w250',
+          'w300',
+          'w350',
+          'w400',
+          'w450',
+          'w500',
+
+          'h10',
+          'h20',
+          'h30',
+          'h50',
+          'h100',
+          'h150',
+          'h200',
         ],
       },
       {
         title: 'space',
+        desc: '元素内外边距样式，可选值为从5开始公差为5最大项为50的等差数列',
         content: [
-          'w100',
-          'w150',
-          'w200',
-        ],
-      },
-      {
-        title: 'highlight',
-        content: [
-          'w100',
-          'w150',
-          'w200',
+          'pl5',
+          'pl10',
+          'pl15',
+          'pl50',
+          'pt5',
+          'pt10',
+          'pt15',
+          'pt50',
+          'pb5',
+          'pb10',
+          'pb15',
+          'pb50',
+          'p5',
+          'p10',
+          'p15',
+          'p50',
+
+          'ml5',
+          'ml10',
+          'ml15',
+          'ml50',
+          'mt5',
+          'mt10',
+          'mt15',
+          'mt50',
+          'mb5',
+          'mb10',
+          'mb15',
+          'mb50',
+          'm5',
+          'm10',
+          'm15',
+          'm50',
         ],
       },
       {
         title: 'text',
+        desc: '文本对齐、文本修饰、文本颜色',
         content: [
-          'w100',
-          'w150',
-          'w200',
+          'ta-l',
+          'ta-c',
+          'ta-r',
+          'td-ol',
+          'td-ul',
+          'td-lt',
+          'td-no',
+          'success',
+          'warn',
+          'danger',
+          'gray',
         ],
       },
       {
         title: 'display',
+        desc: '文本对齐、文本修饰、文本颜色',
         content: [
-          'w100',
-          'w150',
-          'w200',
+          'dis-i',
+          'dis-ib',
+          'dis-b',
         ],
       },
       {
         title: 'transition',
+        desc: '是否运用过渡效果',
         content: [
-          'w100',
-          'w150',
-          'w200',
+          'transition',
+          'transition-quick',
+          'transition-slow',
         ],
       },
       {
