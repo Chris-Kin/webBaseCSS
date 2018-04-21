@@ -909,6 +909,24 @@ template {
 .transition-slow {
   transition: all 0.2s ease-out;
 }
+.border {
+  border: 1px solid #333;
+}
+.border-b {
+  border-bottom: 1px solid #333;
+}
+.border-l {
+  border-left: 1px solid #333;
+}
+.border-r {
+  border-right: 1px solid #333;
+}
+.border-t {
+  border-top: 1px solid #333;
+}
+.bs {
+  box-shadow: 0 0 5px #555;
+}
 .dis-ib {
   display: inline-block;
 }
@@ -930,6 +948,54 @@ template {
 .dis-tc {
   display: table-cell;
 }
+.fs12 {
+  font-size: 12px;
+}
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs18 {
+  font-size: 18px;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fs22 {
+  font-size: 22px;
+}
+.fs24 {
+  font-size: 24px;
+}
+.success {
+  color: #4fe16f;
+}
+.warn {
+  color: #fc0;
+}
+.danger {
+  color: #f30;
+}
+.black {
+  color: #000;
+}
+.gray {
+  color: #555;
+}
+.white {
+  color: #fff;
+}
+.fw-n {
+  font-weight: normal;
+}
+.fw-b {
+  font-weight: bold;
+}
+.fw-l {
+  font-weight: lighter;
+}
 .ta-l {
   text-align: left;
 }
@@ -950,16 +1016,4 @@ template {
 }
 .td-no {
   text-decoration: none;
-}
-.success {
-  color: #4fe16f;
-}
-.warn {
-  color: #fc0;
-}
-.danger {
-  color: #f30;
-}
-.gray {
-  color: #555;
 }
