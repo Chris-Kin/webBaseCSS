@@ -924,6 +924,15 @@ template {
 .border-t {
   border-top: 1px solid #333;
 }
+.br3 {
+  border-radius: 3px;
+}
+.br5 {
+  border-radius: 5px;
+}
+.br8 {
+  border-radius: 8px;
+}
 .bs {
   box-shadow: 0 0 5px #555;
 }

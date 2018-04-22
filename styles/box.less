@@ -15,6 +15,20 @@
   border-top: 1px solid #333;
 }
 
+// border-radius
+.br (@radius: 3px) {
+  border-radius: @radius;
+}
+.br3 {
+  .br(3px);
+}
+.br5 {
+  .br(5px);
+}
+.br8 {
+  .br(8px);
+}
+
 // box-shadow
 .bs {
   box-shadow: 0 0 5px #555;
