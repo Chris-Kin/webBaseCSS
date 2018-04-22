@@ -14,6 +14,7 @@
 |首字母简写有歧义的属性命名| 采用属性名单词缩写形式命名 | ```dis-ib -> display: inline-block``` |
 
 # 使用介绍
-1. 全局引入webBaseCSS： ```import 'webBaseCSS/dist/index.css';```
-2. 在需要设置样式的标签上定义类，如``` <div class="mt10 w200"></div>``` 表示对div设置```margin-top: 10px; width: 200px```
-3. [normalize.css](https://necolas.github.io/normalize.css/)
+1. npm i web-base-css
+2. 全局引入webBaseCSS： ```import 'web-base-css/dist/index.css';```
+3. 在需要设置样式的标签上定义类，如``` <div class="mt10 w200"></div>``` 表示对div设置```margin-top: 10px; width: 200px```
+4. [normalize.css](https://necolas.github.io/normalize.css/)
