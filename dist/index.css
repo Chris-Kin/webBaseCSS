@@ -901,28 +901,28 @@ template {
   height: 500px;
 }
 .transition {
-  transition: all 0.1s ease-out;
-}
-.transition-quick {
-  transition: all 0.03s ease-out;
-}
-.transition-slow {
   transition: all 0.2s ease-out;
 }
+.transition-quick {
+  transition: all 0.1s ease-out;
+}
+.transition-slow {
+  transition: all 0.4s ease-out;
+}
 .border {
-  border: 1px solid #333;
+  border: 1px solid #ccc;
 }
 .border-b {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ccc;
 }
 .border-l {
-  border-left: 1px solid #333;
+  border-left: 1px solid #ccc;
 }
 .border-r {
-  border-right: 1px solid #333;
+  border-right: 1px solid #ccc;
 }
 .border-t {
-  border-top: 1px solid #333;
+  border-top: 1px solid #ccc;
 }
 .br3 {
   border-radius: 3px;
@@ -935,6 +935,18 @@ template {
 }
 .bs {
   box-shadow: 0 0 5px #555;
+}
+.bs-l {
+  box-shadow: -5px 0 5px -4px #555;
+}
+.bs-r {
+  box-shadow: 5px 0 5px -4px #555;
+}
+.bs-t {
+  box-shadow: 0 -5px 5px -4px #555;
+}
+.bs-b {
+  box-shadow: 0 5px 5px -4px #555;
 }
 .dis-ib {
   display: inline-block;

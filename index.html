@@ -44,6 +44,10 @@
     section > div {
       margin: 10px;
     }
+    [class*=transition]:hover {
+      background-color: #159568;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -54,9 +58,17 @@
     </h2>
     <ul>
       <li v-for="el in categoryList">
-        <p class="title transition-slow">{{el.title}}<span class="desc ml20">{{el.desc}}</span></p>
+        <p class="title">{{el.title}}<span class="desc ml20">{{el.desc}}</span></p>
         <section>
           <div v-for="item in el.content" :class="item" class="bg">.{{item}}</div>
+        </section>
+      </li>
+      <li>
+        <p class="title">transition<span class="desc ml20">是否运用过渡效果</span></p>
+        <section>
+          <div class="bg h50 transition-quick">.transition-quick</div>
+          <div class="bg h50 transition">.transition</div>
+          <div class="bg h50 transition-slow">.transition-slow</div>
         </section>
       </li>
     </ul>
@@ -189,6 +201,10 @@
           'br5',
           'br8',
           'bs',
+          'bs-l',
+          'bs-r',
+          'bs-t',
+          'bs-b',
         ],
       }
     ];
