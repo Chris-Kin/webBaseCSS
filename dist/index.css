@@ -298,6 +298,9 @@ template {
   display: none;
 }
 /* 基础类 */
+.m0 {
+  margin: 0px;
+}
 .m5 {
   margin: 5px;
 }
@@ -327,6 +330,9 @@ template {
 }
 .m50 {
   margin: 50px;
+}
+.mt0 {
+  margin-top: 0px;
 }
 .mt5 {
   margin-top: 5px;
@@ -358,6 +364,9 @@ template {
 .mt50 {
   margin-top: 50px;
 }
+.mb0 {
+  margin-bottom: 0px;
+}
 .mb5 {
   margin-bottom: 5px;
 }
@@ -387,6 +396,9 @@ template {
 }
 .mb50 {
   margin-bottom: 50px;
+}
+.ml0 {
+  margin-left: 0px;
 }
 .ml5 {
   margin-left: 5px;
@@ -418,6 +430,9 @@ template {
 .ml50 {
   margin-left: 50px;
 }
+.mr0 {
+  margin-right: 0px;
+}
 .mr5 {
   margin-right: 5px;
 }
@@ -447,6 +462,9 @@ template {
 }
 .mr50 {
   margin-right: 50px;
+}
+.p0 {
+  padding: 0px;
 }
 .p5 {
   padding: 5px;
@@ -478,6 +496,9 @@ template {
 .p50 {
   padding: 50px;
 }
+.pt0 {
+  padding-top: 0px;
+}
 .pt5 {
   padding-top: 5px;
 }
@@ -507,6 +528,9 @@ template {
 }
 .pt50 {
   padding-top: 50px;
+}
+.pb0 {
+  padding-bottom: 0px;
 }
 .pb5 {
   padding-bottom: 5px;
@@ -538,6 +562,9 @@ template {
 .pb50 {
   padding-bottom: 50px;
 }
+.pl0 {
+  padding-left: 0px;
+}
 .pl5 {
   padding-left: 5px;
 }
@@ -567,6 +594,9 @@ template {
 }
 .pl50 {
   padding-left: 50px;
+}
+.pr0 {
+  padding-right: 0px;
 }
 .pr5 {
   padding-right: 5px;
@@ -600,6 +630,9 @@ template {
 }
 /*margin*/
 /*padding*/
+.w0 {
+  width: 0px;
+}
 .w10 {
   width: 10px;
 }
@@ -749,6 +782,9 @@ template {
 }
 .w500 {
   width: 500px;
+}
+.h0 {
+  height: 0px;
 }
 .h10 {
   height: 10px;
@@ -1037,4 +1073,13 @@ template {
 }
 .td-no {
   text-decoration: none;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.f-c {
+  clear: both;
 }

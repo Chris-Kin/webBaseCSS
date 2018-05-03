@@ -1,14 +1,14 @@
 .generate-width(50);
 .generate-height(50);
 
-.generate-width(@n, @i:1) when (@i =< @n) {
+.generate-width(@n, @i:0) when (@i =< @n) {
   @num: (@i * 10);
   .w@{num} {
     width: (1px * @num);
   }
   .generate-width(@n, (@i + 1));
 }
-.generate-height(@n, @i:1) when (@i =< @n) {
+.generate-height(@n, @i:0) when (@i =< @n) {
   @num: (@i * 10);
   .h@{num} {
     height: (1px * @num);
