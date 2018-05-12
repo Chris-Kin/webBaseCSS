@@ -8,6 +8,9 @@
 * 🐞 : 修复 bug
 * 💀 : 移除
 
+## 2.0.0
+1. 💀 删除success、warn、danger颜色类
+2. 🚩 添加green、yellow、red、blue、black、dark、gray、light-gray、white颜色类
 ## 1.0.2
 1. 🚩 margin和padding增加0值
 2. 🚩 width和height增加0值
