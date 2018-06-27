@@ -5,6 +5,7 @@
   "repository": "git@github.com:attacking/webBaseCSS.git",
   "author": "misuhom@163.com",
   "license": "MIT",
+  "main": "dist/index.css",
   "scripts": {
     "start": "webpack --config webpack.config.js --watch"
   },
