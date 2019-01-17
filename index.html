@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>webBaseCSS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./dist/index.css" />
   <script src="//cdn.jsdelivr.net/npm/vue"></script>
   <style>
     * {
@@ -49,6 +48,7 @@
       color: #fff;
     }
   </style>
+  <link rel="stylesheet" type="text/css" media="screen" href="./dist/index.css" />
 </head>
 <body>
   <div id="app" class="p20">
@@ -61,14 +61,6 @@
         <p class="title">{{el.title}}<span class="desc ml20">{{el.desc}}</span></p>
         <section>
           <div v-for="item in el.content" :class="item" class="bg">.{{item}}</div>
-        </section>
-      </li>
-      <li>
-        <p class="title">transition<span class="desc ml20">是否运用过渡效果</span></p>
-        <section>
-          <div class="bg h50 transition-quick">.transition-quick</div>
-          <div class="bg h50 transition">.transition</div>
-          <div class="bg h50 transition-slow">.transition-slow</div>
         </section>
       </li>
     </ul>
@@ -153,7 +145,7 @@
       },
       {
         title: 'text',
-        desc: '文本对齐、文本修饰、文本颜色',
+        desc: '文本text-align/vertical-align对齐、文本修饰、文本颜色',
         content: [
           'fs12',
           'fs14',
@@ -181,6 +173,15 @@
           'td-ul',
           'td-lt',
           'td-no',
+
+          // todo: demo不直观
+          'va-m',
+          'va-b',
+          'va-tb',
+          'va-t',
+          'va-tt',
+          'va-sub',
+          'va-super',
         ],
       },
       {
@@ -196,6 +197,7 @@
         title: 'overflow',
         desc: 'overflow属性设置',
         content: [
+          // todo: demo不直观
           'of-a',
           'of-h',
           'of-s',
@@ -223,6 +225,21 @@
           'transition',
           'transition-quick',
           'transition-slow',
+        ],
+      },
+      {
+        title: 'background-color',
+        desc: '背景色',
+        content: [
+          'bgc-green',
+          'bgc-yellow',
+          'bgc-red',
+          'bgc-blue',
+          'bgc-black',
+          'bgc-dark',
+          'bgc-gray',
+          'bgc-light-gray',
+          'bgc-white',
         ],
       },
       {

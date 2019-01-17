@@ -1,3 +1,5 @@
+@import './variable.less';
+
 .fs12 {
   font-size: 12px;
 }
@@ -21,31 +23,31 @@
 }
 
 .green {
-  color: #36C455;
+  color: @green;
 }
 .yellow {
-  color: #FBA32A;
+  color: @yellow;
 }
 .red {
-  color: #FA5252;
+  color: @red;
 }
 .blue {
-  color: #398CF8;
+  color: @blue;
 }
 .black {
-  color: #000;
+  color: @black;
 }
 .dark {
-  color: #243141;
+  color: @dark;
 }
 .gray {
-  color: #5B6471;
+  color: @gray;
 }
 .light-gray {
-  color: #BDC1C6;
+  color: @light-gray;
 }
 .white {
-  color: #fff;
+  color: @white;
 }
 
 .fw-n {
@@ -66,6 +68,28 @@
 }
 .ta-r {
   text-align: right;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.va-tb {
+  vertical-align: text-bottom;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-tt {
+  vertical-align: text-top;
+}
+.va-sub {
+  vertical-align: sub;
+}
+.va-super {
+  vertical-align: super;
 }
 
 .td-ol {

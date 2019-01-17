@@ -984,6 +984,33 @@ template {
 .bs-b {
   box-shadow: 0 5px 5px -4px #555;
 }
+.bgc-green {
+  background-color: #36C455;
+}
+.bgc-yellow {
+  background-color: #FBA32A;
+}
+.bgc-red {
+  background-color: #FA5252;
+}
+.bgc-blue {
+  background-color: #398CF8;
+}
+.bgc-black {
+  background-color: #000;
+}
+.bgc-dark {
+  background-color: #243141;
+}
+.bgc-gray {
+  background-color: #5B6471;
+}
+.bgc-light-gray {
+  background-color: #BDC1C6;
+}
+.bgc-white {
+  background-color: #fff;
+}
 .dis-ib {
   display: inline-block;
 }
@@ -1097,6 +1124,27 @@ template {
 }
 .ta-r {
   text-align: right;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.va-tb {
+  vertical-align: text-bottom;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-tt {
+  vertical-align: text-top;
+}
+.va-sub {
+  vertical-align: sub;
+}
+.va-super {
+  vertical-align: super;
 }
 .td-ol {
   text-decoration: overline;
