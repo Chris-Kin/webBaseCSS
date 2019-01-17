@@ -8,9 +8,13 @@
 * 🐞 : 修复 bug
 * 💀 : 移除
 
+## 2.0.5
+1. 🚩 增加background-color样式支持
+2. 🚩 增加vertical-align样式支持
+3. 💄 颜色抽成变量供各个文件使用
 
 ## 2.0.4
-1. 💄 增加overflow样式支持
+1. 🚩 增加overflow样式支持
 
 ## 2.0.3
 1. 💄 增加npmignore文件
