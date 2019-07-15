@@ -8,6 +8,9 @@
 * 🐞 : 修复 bug
 * 💀 : 移除
 
+## 2.0.6
+1. 🚩 增加border-no样式,无边框
+
 ## 2.0.5
 1. 🚩 增加background-color样式支持
 2. 🚩 增加vertical-align样式支持
