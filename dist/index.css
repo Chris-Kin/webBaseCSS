@@ -945,6 +945,9 @@ template {
 .transition-slow {
   transition: all 0.4s ease-out;
 }
+.border-no {
+  border: none;
+}
 .border {
   border: 1px solid #ccc;
 }
